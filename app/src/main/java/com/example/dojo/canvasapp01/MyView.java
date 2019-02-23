@@ -37,5 +37,11 @@ private Paint paint;
         paint.setColor(Color.DKGRAY);
         paint.setStyle(Paint.Style.FILL);
         canvas.drawRect(400,800,600,1000,paint);
+        //線を描く
+        paint.setColor(Color.GRAY);
+        paint.setStrokeWidth(45);
+        canvas.drawLine(0,0,canvas.getWidth(),canvas.getHeight(),paint);
+        canvas.drawLine(0,canvas.getHeight(),canvas.getWidth(),0,paint);
+
     }
 }
