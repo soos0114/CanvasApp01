@@ -32,5 +32,10 @@ private Paint paint;
         canvas.drawCircle(300, 500, 50,paint);
         paint.setColor(Color.CYAN);
         canvas.drawCircle(300, 600, 50,paint);
+
+        //　四角形
+        paint.setColor(Color.DKGRAY);
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawRect(400,800,600,1000,paint);
     }
 }
